@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>🎓 Codetopia Community Student Registration Form</h1>
+    <p>Welcome to Codetopia Community! Please fill out this registration form to enroll in our web development courses.</p>
+    <hr>
+
+    <section>
+        <fieldset>
+            <legend>📋 <b>Personal Information </b></legend>
+            <form action="">
+                <label for="firstname">First Name *</label> <br>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter your first name"><br><br>
+
+                <label for="lastname">Last Name *</label><br>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter your last name"><br><br>
+
+                <label for="email">Email Address *</label><br>
+                <input type="email" name="email" id="email" placeholder="you@example.com"><br><br>
+
+                <label for="number">Phone Number </label><br>
+                <input type="number" name="number" id="number" placeholder="123-456-7890"><br>
+                <p>Format: 123-456-7890</p>
+
+                <label for="date-of-birth">Date of Birth *</label><br>
+                <input type="date" name="date-of-birth" id="date-of-birth"><br><br>
+
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age" placeholder="Enter y"><br><br>
+
+                <label for="gender"><b>Gender:</b></label><br>
+                <input type="radio" name="gender" id="gender">Male <br>
+                <input type="radio" name="gender" id="gender">Female <br>
+                <input type="radio" name="gender" id="gender">Other <br>
+                <input type="radio" name="gender" id="gender">Prefer not to say <br><br>
+            </form>
+        </fieldset>
+    </section>
+
+    <section>
+        <fieldset>
+            <legend>🏠 <b>Address information</b></legend>
+            <label>Street Address *</label><br>
+            <input type="text" placeholder="123 Main Street"> <br><br>
+
+            <label>City *</label><br>
+            <input type="text" placeholder="Enter your city"> <br><br>
+
+            <label>State/Province</label><br>
+            <select>
+                <option value="">-- Select State --</option>
+                <option value="">Alabama</option>
+            </select> <br><br>
+            
+            <label>Zip/Postal Code</label><br>
+            <input type="text" placeholder="12345 or 12345-6789"> <br><br>
+
+            <label>Country *</label><br>
+            <select>
+                <option value="">United States</option>
+                <option value="">United Kingdom</option>
+            </select> <br><br>
+        </fieldset>
+    </section>
+
+    <section>
+        <fieldset>
+            <legend>🎓 <b>Educational Background</b></legend>
+
+             <label>Highest Education Level *</label><br>
+                <select>
+                    <option value="">-- Select Education Level --</option>
+                    <option value="">JHS</option>
+                </select> <br><br>
+
+            <label>Field of Study</label><br>
+                <input type="text" placeholder="e.g., Computer Science, Bus"><br><br>
+
+            <label>Graduation Year</label><br>
+                <input type="text" placeholder="2020"><br><br>
+
+            <label>School/University Name</label><br>
+                <input type="text" placeholder="Enter your school or universi"><br><br>
+
+        </fieldset>
+    </section>
+
+    <section>
+        <fieldset>
+            <legend><b>💻 Programming Experience</b></legend>
+            <label><b>Current Programming Experience Level *</b></label><br>
+                <input type="radio" name="experience">Absolute Beginner (Never coded before) <br>
+                <input type="radio" name="experience">Some Experience (Tried tutorials, basic projects) <br>
+                <input type="radio" name="experience">Intermediate (Built several projects) <br>
+                <input type="radio" name="experience">Advanced (Professional experience) <br> <br>
+
+                <label><b>Programming Languages You Know (Check all that apply): </b></label><br>
+                <input type="checkbox">HTML <br>
+                <input type="checkbox">CSS <br>
+                <input type="checkbox">JavaScript <br>
+                <input type="checkbox">Python <br>
+                <input type="checkbox">Java <br>
+                <input type="checkbox">C# <br>
+                <input type="checkbox">PHP <br>
+                <input type="checkbox">None of the above <br><br>
+
+                <label>How many years have you been coding?</label> <br>
+                <input type="range" id="yearsSlider" min="0" max="50" value="0">
+                <p><b>Years: <span id="yearsDisplay">0</span></b></p>
+
+                <script>
+                    // Get the elements
+                    const slider = document.getElementById('yearsSlider');
+                    const display = document.getElementById('yearsDisplay');
+
+                    // Update the display when the slider changes
+                    slider.addEventListener('input', function() {
+                        display.textContent = this.value;
+                    });
+                </script>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>📚 Course Selection</b></legend>
+                
+                <label>Primary Course Interest *</label><br>
+                <select>
+                    <option value="">-- Select Your Main Course --</option>
+                </select> <br><br>
+
+                <label><b>Preferred Learning Schedule:</b></label> <br>
+                <input type="radio" name="schedule">Weekdays (Monday - Friday) <br>
+                <input type="radio" name="schedule">Weekends (Saturday - Sunday) <br>
+                <input type="radio" name="schedule">Evenings (After 6PM) <br>
+                <input type="radio" name="schedule">Flexible Schedule <br> <br>
+
+                <label>Preferred Start Date</label><br>
+                <input type="date"><br><br>
+
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>🎯 Goals & Motivation</b></legend>
+                    <label>What are your career goals?*</label><br>
+                    <textarea rows="4" cols="60">Tell us about your career aspirations, what you hope to achive, and how programming fits into your goals... (50-500 characters)
+                    </textarea>
+                    <p>Minimum 50 charactera, Maximum 500 characters</p>
+
+                    <label>What motivates you to learn programming?</label><br>
+                    <textarea rows="4" cols="60">Share what drives your interest in technology and programming...
+                    </textarea> <br><br>
+
+                    <label>How many hours per week can you commit to studying?</label> <br>
+                    <input type="text" placeholder="Enter h"><br><br>
+
+                <label><b>Learning Style Preferences (Check all that apply): </b></label><br>
+                <input type="checkbox">Video Tutorials <br>
+                <input type="checkbox">Hands-on Projects <br>
+                <input type="checkbox">Reading Documentaion <br>
+                <input type="checkbox">Group Discussions <br>
+                <input type="checkbox">One-on-one Mentoring <br><br>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>🖥️ Technical Information</b></legend>
+
+                <label>Operating System</label><br>
+                <select>
+                    <option value="">-- Select OS --</option>
+                </select> <br><br>
+
+                <label>Internet Connection Speed</label><br>
+                <select>
+                    <option value="">-- Select Speed --</option>
+                </select> <br><br>
+
+                <label><b>Do you have access to: </b></label><br>
+                <input type="checkbox">Desktop/Laptop Computer <br>
+                <input type="checkbox">Webcam <br>
+                <input type="checkbox">Microphone <br>
+                <input type="checkbox">Quiet Stude Space <br><br>
+            </fieldset>
+        </section>
+</body>
+</html>
