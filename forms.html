@@ -25,7 +25,7 @@
 
                 <label for="number">Phone Number </label><br>
                 <input type="number" name="number" id="number" placeholder="123-456-7890"><br>
-                <p>Format: 123-456-7890</p>
+                <span>Format: 123-456-7890 <br><br></span>
 
                 <label for="date-of-birth">Date of Birth *</label><br>
                 <input type="date" name="date-of-birth" id="date-of-birth"><br><br>
@@ -110,8 +110,8 @@
                 <input type="checkbox">None of the above <br><br>
 
                 <label>How many years have you been coding?</label> <br>
-                <input type="range" id="yearsSlider" min="0" max="50" value="0">
-                <p><b>Years: <span id="yearsDisplay">0</span></b></p>
+                <input type="range" id="yearsSlider" min="0" max="50" value="0"><br>
+                <b>Years: <span id="yearsDisplay">0</span></b>
 
                 <script>
                     // Get the elements
@@ -151,13 +151,11 @@
             <fieldset>
                 <legend><b>🎯 Goals & Motivation</b></legend>
                     <label>What are your career goals?*</label><br>
-                    <textarea rows="4" cols="60">Tell us about your career aspirations, what you hope to achive, and how programming fits into your goals... (50-500 characters)
-                    </textarea>
-                    <p>Minimum 50 charactera, Maximum 500 characters</p>
+                    <textarea rows="4" cols="60"placeholder="Tell us about your career aspirations, what you hope to achive, and how programming fits into your goals... (50-500 characters)"></textarea><br>
+                    Minimum 50 characters, Maximum 500 characters <br><br>
 
                     <label>What motivates you to learn programming?</label><br>
-                    <textarea rows="4" cols="60">Share what drives your interest in technology and programming...
-                    </textarea> <br><br>
+                    <textarea rows="4" cols="60" placeholder="Share what drives your interest in technology and programming..."></textarea> <br><br>
 
                     <label>How many hours per week can you commit to studying?</label> <br>
                     <input type="text" placeholder="Enter h"><br><br>
@@ -189,8 +187,80 @@
                 <input type="checkbox">Desktop/Laptop Computer <br>
                 <input type="checkbox">Webcam <br>
                 <input type="checkbox">Microphone <br>
-                <input type="checkbox">Quiet Stude Space <br><br>
+                <input type="checkbox">Quiet Study Space <br><br>
             </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>📄 Additional Information</b></legend>
+                <label>Upload Resume (Optional)</label><br>
+                <input type="file" accept=".pdf,.doc,.docx"><br>
+                <span>Accepted formats:PDF, DOC, DOCX</span><br><br>
+
+                <label>Portfolio Website URL</label><br>
+                <input type="url" placeholder="https://yourportfolio.com"><br><br>
+
+                <label>GitHub Profile URL</label><br>
+                <input type="url" placeholder="https://github.com/yourusern"><br><br>
+
+                <label>LinkedIn Profile URL</label><br>
+                <input type="url" placeholder="https://linkedin.com/in/yourpr"><br><br>
+
+                <label>How did you hear about Codetopia Community?</label><br>
+                <select>
+                    <option value="">-- Select an option --</option>
+                </select> <br><br>
+
+               <label>Additional Comments or Questions</label><br>
+                <textarea rows="4" cols="58" placeholder="Any additional information, special requirements, or questions you'd like to share...""></textarea><br><br>
+
+                <label>Emergency Contact Name</label><br>
+                <input type="text" placeholder="full name of emergency con"><br><br>
+
+                <label>Emergency Contact Phone</label><br>
+                <input type="text" placeholder="Emergency contact phone nu"><br><br>
+
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>✅ Agreement & Terms</b></legend>
+                <label><b>Please read and agree to the following:</b></label><br><br>
+                <input type="checkbox" name="T&C">I certify that all information provided is accurate and complete *<br><br>
+                <input type="checkbox" name="T&C">I agree to the Terms and Conditions *<br><br>
+                <input type="checkbox" name="T&C">I agree to the Privacy Policy *<br><br>
+                <input type="checkbox" name="T&C">I agree to receive course updates and promotional emails<br><br>
+                <input type="checkbox" name="T&C">I consent to sharing my success story and projects for marketing purposes<br><br>
+
+                <label>Digital Signature (Type your full name) *</label><br>
+                <input type="text" placeholder="Type your legal full name as"><br><br>
+
+                <label>Date *</label><br>
+                <input type="date" name=""><br>
+            </fieldset>
+        </section> 
+        <br>
+        <section>
+            <button type="submit">🎓Submit Registration</button>
+            <button type="reset">🔄️Reset Form</button>
+            <button type="reset">💾Save as Draft</button>
+        </section>
+        
+        <br><hr>
+        <section>
+            <h2>📞 Need Help?</h2>
+            <label><b>Contact Codetopia Community Support:</b></label><br>
+            
+            Email: <a href="">support@codetopiachomunity.com</a><br>
+            Phone: <a href="">+23-555-123-4567</a><br>
+            Hours: Monday, Wednesday, Friday 9 PM - 11 PM GMT <br><br>
+            <b>📍 Campus Locations:</b><br>
+            Jupiter 🚀• Japan 🗾• Tesano • The Moon 🌚• Seth's Bedroom 🤣
+
+            <p>&copy; <em>2024 Codetopia Community. All rights reserved. |<a href=""> Privacy Policy </a>
+                |<a href=""> Terms of Service </a>|<a href=""> Accessiblity</a></em></p>
         </section>
 </body>
 </html>
