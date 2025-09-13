@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #191446;
+}
+
+table  {
+    border: 1px solid blue;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+video{
+     width: 250px;
+    height: 200px;
+}
+
+audio{
+    width: 200px;
+}
+
+blockquote {
+    background-color: #f0f0f0;
+    width: 250px;
+    padding: 15px;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    padding-left: 30px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+}
+
+hr {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    /* padding: 10px; */
+}
+
+/* .left, .right {
+    flex: 1;
+    padding: 0 0 0 20px;
+} */
+
+/* .left {
+    width: 80%;
+} */
+.rectangle {
+  width: 525px;               
+  height: 50px;
+  display: flex;  
+  border: 2px solid #032d70; 
+  margin-bottom: 30px;          
+}
+
+.rectangle-left {
+  width: 50%;
+  background: #032d70;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.right-rectangle {
+  width: 50%;
+}
+
+.header p {
+    margin-top: 0;
+}
+.right {
+    padding-left: 20px;
+}
+
+.about h2, .skills-and-interests h2, .projects h2, .fun-facts h2 {
+    text-transform: uppercase;
+}
+
+.projects h3, p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+} 
+
+.socials {
+    background-color: #f0f0f0;
+    width: 250px;
+    padding: 15px;
+}
+
+.socials ul  {
+    padding-left: 20px;
+}
+
+.audio p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.audio {
+    background-color: #f0f0f0;
+    width: 250px;
+    padding: 15px;
+    /* text-align: center; */
+}
