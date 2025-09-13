@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <!-- No CSS: table uses plain HTML attributes and emojis to indicate status -->
 </head>
 <body>
     <!-- Header section -->
     <h1>👋Hi, I'm Elkanah </h1>
     <!-- image here-->
-      <img src="/portfolio-learning/IMG_20240616_230117_347.jpg" alt="profile-image" width="200" height="200">
+      <img src="/portfolio-learning/images/IMG_20240616_230117_347.jpg" alt="profile-image" width="200" height="200">
         <br>
     <p><strong>Aspiring Web Developer | Tech Enthusiast | Problem Solver</strong></p>
     <hr>
@@ -25,26 +26,68 @@
     </p>
     <!-- Video here -->
       <video controls width="320" height="240">
-             <source src="/portfolio-learning/VID_20240303_203657_248.mp4" type="video/mp4">
+             <source src="/portfolio-learning/audio & video/VID_20240303_203657_248.mp4" type="video/mp4">
         </video>
             <br>
     <!-- Put Skills and Interests in a table -->
     <h2>🛠️ Skills & Interests</h2>
-    <h3>Currently Learning:</h3>
-    <ul>
-        <li>HTML5 - Building the foundation of web pages</li>
-        <li>CSS3 - Making websites look amazing</li>
-        <li>JavaScript - Adding interactivity and logic</li>
-        <li>Git & Github - Version control and collaboration</li>
-    </ul>
-
-    <h3>Interested In:</h3>
-    <ul>
-        <li>Frontend Development</li>
-        <li>Mobile App Development</li>
-        <li>User Experience Design</li>
-        <li>Open Source Projects</li>
-    </ul>
+    <div aria-labelledby="skills-heading">
+        <p id="skills-heading"><strong>Skills & Interests</strong> — ✅ means Complete, ⚠️ means In Progress.</p>
+        <table border="1" cellpadding="8" cellspacing="0" aria-describedby="skills-heading">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Area</th>
+                    <th>Details</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4">Currently Learnning</th>
+                    <td>HTML5</td>
+                    <td>Building the foundation of web pages</td>
+                    <td>✅ Complete</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Styling layouts, responsive design</td>
+                    <td>⚠️ In Progress</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Adding interactivity and logic</td>
+                    <td>⚠️ In Progress</td>
+                </tr>
+                <tr>
+                    <td>Git &amp; GitHub</td>
+                    <td>Version control and collaboration</td>
+                    <td>✅ Complete</td>
+                </tr>
+                <tr>
+                    <th rowspan="4">Interested In</th>
+                    <td>Frontend Development</td>
+                    <td>Building user interfaces and components</td>
+                    <td>⚠️ In Progress</td>
+                </tr>
+                <tr>
+                    <td>Mobile App Development</td>
+                    <td>Exploring cross-platform frameworks</td>
+                    <td>⚠️ In Progress</td>
+                </tr>
+                <tr>
+                    <td>User Experience Design</td>
+                    <td>Designing intuitive user flows</td>
+                    <td>⚠️ In Progress</td>
+                </tr>
+                <tr>
+                    <td>Open Source</td>
+                    <td>Contributing to community projects</td>
+                    <td>⚠️ In Progress</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2>💻 My Learning Projects</h2>
     
@@ -81,7 +124,7 @@
     </ol>
     <!-- Audio here -->
      <audio controls>
-        <source src="/portfolio-learning/12 Brothers.m4a" type="audio/mpeg">
+        <source src="/portfolio-learning/audio & video/12 Brothers.m4a" type="audio/mpeg">
     </audio>
     <hr>
     <em>"The best time to plant a tree was 20 years ago. The second best time is now." - Chinese Proverb</em>
