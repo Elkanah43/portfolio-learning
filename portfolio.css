@@ -13,11 +13,6 @@ body {
     color: #191446;
 }
 
-table  {
-    border: 1px solid blue;
-    text-transform: uppercase;
-}
-
 h1 {
     text-transform: uppercase;
     font-size: 2.5em;
